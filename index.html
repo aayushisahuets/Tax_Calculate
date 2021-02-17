@@ -1,0 +1,37 @@
+<!-- calculate the tax value -->
+<!Doctype html>
+<html>
+	<head>
+		<title>Jquery Assignment</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+     	<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+        <div class="container" id="pos-form"> 
+            <form name="tax_form" method="post"> 
+                <div>
+            		<label for="price">Price:<em>*</em></label>
+            		<input type="text" name="price" ><br><br>
+                    <span class="errmsg"></span>
+                </div>
+                <div>
+            		<label for="delivery-fees">Delivery fees:</label>
+            		<input type="text" name="delivery_fees" class="alignment"><br><br>
+                    <span class="price-first"></span>
+                </div>
+                <div>
+            		<label for="tax">Tax:</label>
+            		<input type="text" name="tax" placeholder="18% of (Delivery fees+Price)" readonly /><br><br>
+                </div>
+                <div>
+            		<label for="total">Total:</label>
+            		<input type="text" name="total" placeholder="Price + Delivery Fees + Tax" readonly /><br><br>
+                </div>
+            </form>
+        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script><!--ajax cdn-->
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script><!-- jquery cdn -->
+        <script src="js/index.js"></script>
+	</body>
+</html>
+
